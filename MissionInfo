@@ -1,0 +1,61 @@
+
+import java.time.LocalDate;
+
+public class MissionInfo//Declare class named MissionInfo
+{
+    //Declare variable with type
+    private String missionId;
+    private String missionType;
+    private int dangerLevel;
+    private LocalDate missionDate;
+    private int expectedDuration;
+    private int bountyReward;
+    
+    //Declare Constructor
+    public MissionInfo(String missionId, String missionType, int dangerLevel, LocalDate missionDate, int expectedDuration, int bountyReward)
+    {
+        this.missionId = missionId;
+        this.missionType = missionType;
+        this.dangerLevel = dangerLevel;
+        this.missionDate = missionDate;
+        this.expectedDuration = expectedDuration;
+        this.bountyReward = bountyReward;
+    }
+    
+    //Declare Accesssor(Get) method
+    public String getMissionId()
+    {
+        return missionId;
+    }
+    
+    public String getMissionType()
+    {
+        return missionType;
+    }
+    
+    public int getDangerLevel()
+    {
+        return dangerLevel;
+    }
+    
+    public LocalDate getMissionDate()
+    {
+        return missionDate;
+    }
+    
+    public int getExpectedDuration()
+    {
+        return expectedDuration;
+    }
+    
+    public int getBountyReward()
+    {
+        return bountyReward;
+    }
+    
+    //Declare method toString to display
+    public String toString()
+    {
+        return missionId + " (" + missionType + ", bounty: " + bountyReward + ")";
+    }
+}
