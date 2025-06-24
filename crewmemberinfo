@@ -1,0 +1,62 @@
+code 
+
+import java.util.*;
+
+public class CrewMemberInfo //Declare class named CrewMemberInfo 
+{
+    //Declare variable with types
+    private String memberId;
+    private String memberName;
+    private String pirateCrew;
+    private List<MissionInfo> missions;
+
+    //Declare constructor
+    public CrewMemberInfo(String memberId, String memberName, String pirateCrew, List<MissionInfo> missions) 
+    {
+        this.memberId = memberId;
+        this.memberName = memberName;
+        this.pirateCrew = pirateCrew;
+        this.missions = missions;
+    }
+
+    // Getters and Setters
+    public String getMemberId() 
+    {
+        return memberId;
+    }
+
+    public void setMemberId(String memberId) 
+    {
+        this.memberId = memberId;
+    }
+
+    public String getMemberName() 
+    {
+        return memberName;
+    }
+
+    public void setMemberName(String memberName) 
+    {
+        this.memberName = memberName;
+    }
+
+    public String getPirateCrew() 
+    {
+        return pirateCrew;
+    }
+
+    public void setPirateCrew(String pirateCrew) 
+    {
+        this.pirateCrew = pirateCrew;
+    }
+
+    public List<MissionInfo> getMissions() 
+    {
+        return missions;
+    }
+
+    public void setMissions(List<MissionInfo> missions) 
+    {
+        this.missions = missions;
+    }
+}
